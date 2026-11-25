@@ -7,7 +7,8 @@ namespace Miner.Engine.Player
 
   public struct PlayerPrefabComponent : IComponentData
   {
-    public Entity Value;
+    public Entity PlayerEntityPrefab;
+    public Entity HandPrefab;
   }
 
   public class PlayerPrefabBaker : Baker<PlayerPrefabAuthoring>
@@ -16,8 +17,13 @@ namespace Miner.Engine.Player
     {
       var entity = GetEntity(TransformUsageFlags.None);
       var playerPrefab = GetEntity(authoring.PlayerPrefab, TransformUsageFlags.Dynamic);
+      var handPrefab = GetEntity(authoring.HandPrefab, TransformUsageFlags.Dynamic);
 
-      AddComponent(entity, new PlayerPrefabComponent { Value = playerPrefab });
+      AddComponent(entity, new PlayerPrefabComponent
+      {
+        PlayerEntityPrefab = playerPrefab,
+        HandPrefab = handPrefab
+      });
     }
   }
 

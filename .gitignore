@@ -147,3 +147,4 @@ crashlytics-build.properties
 *.prefab
 *.asmdef
 *.shadersubgraph
+*.preset

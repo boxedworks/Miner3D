@@ -6,6 +6,7 @@ namespace Miner.Engine.Player
   public class PlayerPrefabAuthoring : MonoBehaviour
   {
     public GameObject PlayerPrefab;
+    public GameObject HandPrefab;
   }
 
 

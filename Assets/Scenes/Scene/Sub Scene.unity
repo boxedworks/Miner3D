@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 1554247638}
   - component: {fileID: 1554247640}
   - component: {fileID: 1554247641}
+  - component: {fileID: 1554247642}
   m_Layer: 0
   m_Name: Spawners
   m_TagString: Untagged
@@ -151,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: MinerEngine::Miner.Engine.Player.PlayerPrefabAuthoring
   PlayerPrefab: {fileID: 8465883203461768682, guid: a894d7b431b669c4686b26427e25d0f6, type: 3}
+  HandPrefab: {fileID: 2652652024869086696, guid: a13a3f766ef10274d8361f881facfdf8, type: 3}
 --- !u!4 &1554247639
 Transform:
   m_ObjectHideFlags: 0
@@ -192,6 +194,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: MinerEngine::Miner.Engine.Harvestable.HarvestablePrefabAuthoring
   HarvestablePrefab: {fileID: 5683629327438521345, guid: 60092e6bf1fa9804bbffe0f87d3e73c8, type: 3}
+--- !u!114 &1554247642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554247637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed33eda6057bc6479eb94d29d4bfe59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MinerEngine::Miner.Engine.Equippable.EquippablePrefabAuthoring
+  EquippablePrefab: {fileID: 1000000000000000000, guid: 9d5a5a1c9d1c4cb8a4c73db4f0e2b9a1, type: 3}
+  Slot: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

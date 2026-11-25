@@ -19,6 +19,8 @@ namespace Miner.Engine.Camera
   }
 
   [BurstCompile]
+  [UpdateInGroup(typeof(SimulationSystemGroup))]
+  [UpdateBefore(typeof(TransformSystemGroup))]
   [UpdateAfter(typeof(InputSystem))]
   public partial class CameraSystem : SystemBase
   {
