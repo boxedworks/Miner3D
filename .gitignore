@@ -137,7 +137,13 @@ crashlytics-build.properties
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
 
+/ProjectSettings/
+
+/Assets/Scripts/Game/Shaders/
+
 *.meta
 *.asset
 *.json
 *.prefab
+*.asmdef
+*.shadersubgraph

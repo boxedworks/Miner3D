@@ -15,7 +15,9 @@ namespace Miner.Engine.Player
     public override void Bake(PlayerPrefabAuthoring authoring)
     {
       var entity = GetEntity(TransformUsageFlags.None);
-      AddComponent(entity, new PlayerPrefabComponent { Value = GetEntity(authoring.PlayerPrefab, TransformUsageFlags.Dynamic) });
+      var playerPrefab = GetEntity(authoring.PlayerPrefab, TransformUsageFlags.Dynamic);
+
+      AddComponent(entity, new PlayerPrefabComponent { Value = playerPrefab });
     }
   }
 

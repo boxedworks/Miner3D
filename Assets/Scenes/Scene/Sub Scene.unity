@@ -129,6 +129,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1554247639}
   - component: {fileID: 1554247638}
+  - component: {fileID: 1554247640}
+  - component: {fileID: 1554247641}
   m_Layer: 0
   m_Name: Spawners
   m_TagString: Untagged
@@ -164,6 +166,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1554247640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554247637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ac8e43a1ebb8874695690bbe0864cc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MinerEngine::Miner.Engine.Level.LevelPrefabAuthoring
+  LevelPrefab: {fileID: 5233609847734476334, guid: e9d6faabac705874990acfeb6f59c954, type: 3}
+--- !u!114 &1554247641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554247637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe950c922a96ab46b42f07a8d364c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MinerEngine::Miner.Engine.Harvestable.HarvestablePrefabAuthoring
+  HarvestablePrefab: {fileID: 5683629327438521345, guid: 60092e6bf1fa9804bbffe0f87d3e73c8, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
